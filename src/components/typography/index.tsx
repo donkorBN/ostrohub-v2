@@ -9,7 +9,7 @@ const headingStyles = {
 }
 
 const Typo = ({ level, className, children, ...props }: { level: keyof typeof headingStyles; children: ReactNode } & HTMLAttributes<HTMLHeadingElement>) => {
-  const classes = `text-black font-monument ${headingStyles[level]} ${className || ''}`;
+  const classes = `text-black font-monument ${className || ''} ${headingStyles[level]} `;
   return (
     <div className={classes} {...props}>
       <div className="sr-only">{children}</div>

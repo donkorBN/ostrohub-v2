@@ -1,10 +1,15 @@
-import Typography from "@/components/typography";
+import GoalSection from "@/components/landingPage/goalSection";
+import HeroSection from "@/components/landingPage/heroSection";
+import SkillSection from "@/components/landingPage/skillSections";
+import Suscribe from "@/components/subscribe/suscribe";
 
 export default function Home() {
   return (
-    <main>
-      <Typography.p>Hello there</Typography.p>
-      <Typography.h1>Hello there</Typography.h1>
+    <main className="  px-1 md:px-6">
+      <HeroSection />
+      <SkillSection />
+      <GoalSection />
+      <Suscribe />
     </main>
   );
 }
@@ -16,3 +21,7 @@ const meta = {
 }
 
 Home.meta = meta
+
+// bg-[#fafafa]
+/* Rectangle 22 */
+
