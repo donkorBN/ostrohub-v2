@@ -24,8 +24,8 @@ export default function GoalSection() {
         <div className="w-36 h-32 hidden bg md:block absolute bg-contain bg-no-repeat bg-center bg-[url('/assets/center.png')] top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2">
         </div>
       </div>
-      <div className="hidden lg:block w-3/5 relative overflow-hidden rounded-r-3xl bg-cover bg-center bg-[url('/assets/vr.png')]">
-        <span className="absolute w-96 h-80 rounded-full -bottom-4 right-20 bg-[#019444] -z-10"></span>
+      <div className="hidden lg:block w-3/5 relative overflow-hidden rounded-br-3xl bg-cover bg-center bg-[url('/assets/vr.png')]">
+        <span className="absolute w-80 h-80 rounded-full -bottom-4 right-20 bg-[#019444] -z-10"></span>
       </div>
     </div>
   );

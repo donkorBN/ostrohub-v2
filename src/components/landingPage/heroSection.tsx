@@ -19,13 +19,13 @@ export default function HeroSection() {
         <div className=" pt-4 md:pt-8 flex justify-center md:justify-start ">
           <Link
             href="/"
-            className="bg-[#019444] text-lg py-2 px-8 text-white md:px-14 md:py-3 md:text-2xl  font-medium rounded-lg "
+            className="bg-[#019444] text-xl py-3 px-14 text-white md:px-14 md:py-3 md:text-2xl  font-medium rounded-lg "
           >
             Join
           </Link>
         </div>
       </div>
-      <div className="absolute w-32 h-32 md:w-40 md:h-40  top-24 lg:top-28 right-0 lg:inset-x-auto   md:z-10">
+      <div className="absolute w-32 h-32 md:w-40 md:h-40  top-24 lg:top-16 right-0 lg:inset-x-auto   md:z-10">
         <Image src="/assets/idea.png" alt="Idea" fill priority />
       </div>
       <div className="hidden lg:block w-7/12 h-5/6 overflow-x-hidden bg-cover bg-center bg-[url('/assets/banner_img.jpeg')]">

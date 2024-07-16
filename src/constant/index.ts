@@ -7,8 +7,13 @@ interface feature {
   description: string;
 }
 interface highlight {
-    img: string;
-    title: string;
+  img: string;
+  title: string;
+}
+
+interface technology {
+  img: string;
+  name: string;
 }
 
 const Goals: Goal[] = [
@@ -33,21 +38,64 @@ const Goals: Goal[] = [
 const Features: feature[] = [
   {
     heading: "Features",
-    description: "At OstroHub, we are dedicated to nurturing Africa's tech talent todrive innovation and social progress. Join us in creating a brighterfuture by empowering the next generation of tech leaders",
+    description:
+      "At OstroHub, we are dedicated to nurturing Africa's tech talent todrive innovation and social progress. Join us in creating a brighterfuture by empowering the next generation of tech leaders",
   },
   {
     heading: "Features",
-    description: "At OstroHub, we are dedicated to nurturing Africa's tech talent todrive innovation and social progress. Join us in creating a brighterfuture by empowering the next generation of tech leaders",
+    description:
+      "At OstroHub, we are dedicated to nurturing Africa's tech talent todrive innovation and social progress. Join us in creating a brighterfuture by empowering the next generation of tech leaders",
   },
 ];
 
-const Highlight:highlight[] =[
-    {
-        img: "dd",
-        title: "THis is life"
-    }
-]
+const Highlights: highlight[] = [
+  {
+    img: "/assets/hightlight1.jpeg",
+    title: "Hackathons",
+  },
+  {
+    img: "/assets/highlight2.png",
+    title: "20 High-School tour",
+  },
+  {
+    img: "/assets/highlight3.png",
+    title: "Tertiary Engagement",
+  },
+  {
+    img: "/assets/highlight4.png",
+    title: "Design Cha",
+  },
+];
 
+const Technologies: technology[] = [
+  {
+    img: "/assets/figma.png",
+    name: "figma",
+  },
+  {
+    img: "/assets/alpha.png",
+    name: "alpha",
+  },
+  {
+    img: "/assets/python.png",
+    name: "python",
+  },
+  {
+    img: "/assets/react.png",
+    name: "react",
+  },
+  {
+    img: "/assets/wordpress.png",
+    name: "wordpress",
+  },
+  {
+    img: "/assets/slack.png",
+    name: "slack",
+  },
+  {
+    img: "/assets/css.png",
+    name: "css",
+  }
+];
 
-
-export { Goals, Features };
+export { Goals, Features, Highlights, Technologies };
