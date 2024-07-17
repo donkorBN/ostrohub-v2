@@ -1,6 +1,7 @@
 import GoalSection from "@/components/landingPage/goalSection";
 import HeroSection from "@/components/landingPage/heroSection";
 import SkillSection from "@/components/landingPage/skillSections";
+import Navbar from "@/components/navbar/navbar";
 import Suscribe from "@/components/subscribe/suscribe";
 
 // export const metadata = {
@@ -10,11 +11,14 @@ import Suscribe from "@/components/subscribe/suscribe";
 
 export default function Home() {
   return (
-    <main className=" px-4 md:px-6">
+    <main >
+      <Navbar />
+      <div className=" px-4 md:px-6">
       <HeroSection />
       <SkillSection />
       <GoalSection />
       <Suscribe />
+      </div>
     </main>
   );
 }

@@ -9,7 +9,7 @@ export default function Suscribe() {
       <div className="flex w-full md:w-7/12 relative">
         <input
           type="text"
-          className="border-none bg-[#9090903B] px-5 py-3 md:px-6 md:py-4 lg:px-8 lg:py-6 w-full rounded-2xl"
+          className="border-none bg-[#9090903B] px-5 py-3 md:px-6 md:py-4 w-full rounded-2xl"
           placeholder="Your email"
         />
         <button className="border-none h-full outline-none bg-[#EAA53E] px-6 py-3 rounded-2xl absolute right-0 top-0">
