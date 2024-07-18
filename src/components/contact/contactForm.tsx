@@ -6,7 +6,7 @@ export default function ContactForm() {
   const [firstName, setFirstName] = useState("");
 
   const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-    setFirstName(event.target.value);
+    // setFirstName(event.target.value);
   };
   return (
     <>
@@ -21,21 +21,21 @@ export default function ContactForm() {
         label="Last Name"
         type="text"
         placeholder="Doe"
-        value={firstName}
+        value={""}
         onChange={handleChange}
       />
       <ContactInput
         label="Email"
         type="email"
         placeholder="abc@example.com"
-        value={firstName}
+        value={""}
         onChange={handleChange}
       />
       <ContactInput
         label="Subject"
         type="text"
         placeholder="Subject"
-        value={firstName}
+        value={""}
         onChange={handleChange}
       />
       <div className="md:col-span-2">

@@ -6,11 +6,6 @@ import Typography from "@/components/typography";
 import { useState } from "react";
 
 export default function Contact() {
-  const [firstName, setFirstName] = useState("");
-
-  const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-    setFirstName(event.target.value);
-  };
 
   return (
     <main className="px-4 md:px-10 lg:px-24">

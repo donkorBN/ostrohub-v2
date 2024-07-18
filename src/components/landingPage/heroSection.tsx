@@ -1,3 +1,4 @@
+"use client"
 import Link from "next/link";
 import Typography from "../typography";
 import Image from "next/image";
@@ -25,10 +26,19 @@ export default function HeroSection() {
           </Link>
         </div>
       </div>
-      <div className="absolute w-32 h-32 md:w-40 md:h-40  top-24 lg:top-16 right-0 lg:inset-x-auto   md:z-10">
+      <div className="absolute w-32 h-32 md:w-40 md:h-40  top-24 lg:top-16 right-0 lg:inset-x-auto    md:z-10">
         <Image src="/assets/idea.png" alt="Idea" fill priority />
       </div>
-      <div className="hidden lg:block w-7/12 h-5/6 overflow-x-hidden bg-cover bg-center bg-[url('/assets/banner_img.jpeg')]">
+      <div className="hidden relative lg:block w-7/12 h-5/6 overflow-hidden rounded-2xl">
+      <Image 
+       src={"/assets/banner_img.jpeg"}
+       alt="banner"
+       layout="fill"
+       objectFit="cover"
+       priority
+       className="absolute top-0 -z-0 transition-opacity opacity-0 duration-[2s]"
+       onLoadingComplete={(image)=> image.classList.remove("opacity-0")}
+      />
       </div>
     </div>
   );
