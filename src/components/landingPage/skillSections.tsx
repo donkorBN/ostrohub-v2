@@ -3,6 +3,7 @@ import { Features, Highlights } from "@/constant";
 import Typography from "../typography";
 import Image from "next/image";
 import TechnologySlider from "../slider/technologySlider";
+import CardSlider from "../slider/cardSlider";
 
 export default function SkillSection() {
   return (
@@ -10,8 +11,11 @@ export default function SkillSection() {
       <Typography.h4 className="text-lg md:text-2xl lg:text-3xl ">
         Skill up learn and access resources easily.
       </Typography.h4>
-      <div className="w-5/6 flex items-center justify-center py-4 mx-auto">
+      <div className="py-4 w-full block md:flex md:w-5/6 items-center justify-center  mx-auto">
         <TechnologySlider />
+        <div className="block md:hidden">
+        <CardSlider />
+        </div>
       </div>
       <div className="flex flex-col md:flex-row gap-9 py-5">
         {Features.map((feature, index) => (
