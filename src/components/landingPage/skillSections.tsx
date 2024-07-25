@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import { Features, Highlights } from "@/constant";
 import Typography from "../typography";
 import Image from "next/image";
@@ -8,13 +8,13 @@ import CardSlider from "../slider/cardSlider";
 export default function SkillSection() {
   return (
     <div className="my-12 text-center ">
-      <Typography.h4 className="text-lg md:text-2xl lg:text-3xl ">
+      <Typography.p className="text-base md:text-2xl lg:text-3xl font-bold">
         Skill up learn and access resources easily.
-      </Typography.h4>
+      </Typography.p>
       <div className="py-4 w-full block md:flex md:w-5/6 items-center justify-center  mx-auto">
         <TechnologySlider />
         <div className="block md:hidden">
-        <CardSlider />
+          <CardSlider />
         </div>
       </div>
       <div className="flex flex-col md:flex-row gap-9 py-5">
@@ -41,8 +41,7 @@ export default function SkillSection() {
               layout="fill"
               objectFit="cover"
               className="absolute top-0 -z-0 transition-opacity opacity-0 duration-[2s]"
-              onLoadingComplete={(image)=> image.classList.remove("opacity-0")}
-              
+              onLoadingComplete={(image) => image.classList.remove("opacity-0")}
             />
             <Typography.p className="h-16 w-full z-10 bg-gradient-to-r from-[#EAA53E] text-xl text-white flex items-center justify-center">
               {highlight.title}
