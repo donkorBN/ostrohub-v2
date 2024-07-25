@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function GoalSection() {
   return (
-    <div className="w-full block lg:flex ">
+    <div className="w-full block lg:flex pb-20">
       <div className=" w-full lg:w-2/5 relative">
         <div className="grid grid-cols-1  md:grid-cols-2 md:grid-rows-2  gap-4  ">
           {Goals.map((goal, index) => (
@@ -21,8 +21,7 @@ export default function GoalSection() {
             </div>
           ))}
         </div>
-        <div className="w-36 h-32 hidden bg md:block absolute bg-contain bg-no-repeat bg-center bg-[url('/assets/center.png')] top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2">
-        </div>
+        <div className="w-36 h-32 hidden bg md:block absolute bg-contain bg-no-repeat bg-center bg-[url('/assets/center.png')] top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2"></div>
       </div>
       <div className="hidden lg:block w-3/5 relative overflow-hidden rounded-br-3xl bg-cover bg-center bg-[url('/assets/vr.png')]">
         <span className="absolute w-80 h-80 rounded-full -bottom-4 right-20 bg-[#019444] -z-10"></span>

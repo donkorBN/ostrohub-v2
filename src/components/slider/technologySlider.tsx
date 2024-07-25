@@ -1,5 +1,4 @@
 import { Technologies } from "@/constant";
-import Typography from "../typography";
 import Image from "next/image";
 
 export default function TechnologySlider() {

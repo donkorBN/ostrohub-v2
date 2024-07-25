@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export default function HeroSection() {
   return (
-    <div className="pt-4 flex gap-12 justify-center items-center lg:h-[90vh] min-h-[80vh] md:gap-0">
+    <div className="pt-4 flex gap-12 justify-center items-center lg:h-[90vh]  md:gap-0 relative">
       <div className="w-full md:self-center lg:w-6/12">
         <div className="mr-12 md:mr-0 relative z-10 md:z-0">
           <Typography.h1 className="leading-8 text-4xl">

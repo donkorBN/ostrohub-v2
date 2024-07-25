@@ -16,6 +16,18 @@ interface technology {
   name: string;
 }
 
+interface FooterLinkItem {
+  name: string;
+  path: string;
+}
+
+interface FooterLinkGroup {
+  name: string;
+  links: FooterLinkItem[];
+}
+
+type FooterLinks = FooterLinkGroup[];
+
 const Goals: Goal[] = [
   {
     name: "We are",
@@ -95,7 +107,34 @@ const Technologies: technology[] = [
   {
     img: "/assets/css.png",
     name: "css",
-  }
+  },
 ];
 
-export { Goals, Features, Highlights, Technologies };
+const FooterLinks: FooterLinkGroup[] = [
+  {
+    name: "Legal",
+    links: [
+      { name: "Privacy", path: "/privacy" },
+      { name: "Policy", path: "/policy" },
+      { name: "Terms", path: "/terms" },
+    ],
+  },
+  {
+    name: "Socials",
+    links: [
+      { name: "Twitter", path: "/twitter" },
+      { name: "LinkedIn", path: "/linkedIn" },
+      { name: "Instagram", path: "/Instagram" },
+    ],
+  },
+  {
+    name: "Links",
+    links: [
+      { name: "Home", path: "/home" },
+      { name: "About", path: "/about" },
+      { name: "Contact", path: "/contact" },
+    ],
+  },
+];
+
+export { Goals, Features, Highlights, Technologies, FooterLinks };

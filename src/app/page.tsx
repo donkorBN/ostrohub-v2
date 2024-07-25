@@ -1,3 +1,4 @@
+import Footer from "@/components/footer/footer";
 import GoalSection from "@/components/landingPage/goalSection";
 import HeroSection from "@/components/landingPage/heroSection";
 import SkillSection from "@/components/landingPage/skillSections";
@@ -11,14 +12,15 @@ import Suscribe from "@/components/subscribe/suscribe";
 
 export default function Home() {
   return (
-    <main >
+    <main>
       <Navbar />
-      <div className=" px-4 md:px-6">
-      <HeroSection />
-      <SkillSection />
-      <GoalSection />
-      <Suscribe />
+      <div className=" px-4 md:px-7 lg:px-12 ">
+        <HeroSection />
+        <SkillSection />
+        <GoalSection />
+        <Suscribe />
       </div>
+      <Footer />
     </main>
   );
 }
@@ -26,11 +28,10 @@ export default function Home() {
 const meta = {
   pageKey: "home",
   layout: "public",
-  allowAccess: "all"
-}
+  allowAccess: "all",
+};
 
-Home.meta = meta
+Home.meta = meta;
 
 // bg-[#fafafa]
 /* Rectangle 22 */
-
