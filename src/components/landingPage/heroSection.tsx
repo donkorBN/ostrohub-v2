@@ -30,15 +30,15 @@ export default function HeroSection() {
         <Image src="/assets/idea.png" alt="Idea" fill priority />
       </div>
       <div className="hidden relative lg:block w-7/12 h-5/6 overflow-hidden rounded-2xl">
-      <Image 
-       src={"/assets/banner_img.jpeg"}
-       alt="banner"
-       layout="fill"
-       objectFit="cover"
-       priority
-       className="absolute top-0 -z-0 transition-opacity opacity-0 duration-[2s]"
-       onLoadingComplete={(image)=> image.classList.remove("opacity-0")}
-      />
+        <Image
+          src={"/assets/banner_img.jpeg"}
+          alt="banner"
+          layout="fill"
+          objectFit="cover"
+          priority
+          className="absolute top-0 -z-0 transition-opacity opacity-0 duration-[2s]"
+          onLoadingComplete={(image) => image.classList.remove("opacity-0")}
+        />
       </div>
     </div>
   );
