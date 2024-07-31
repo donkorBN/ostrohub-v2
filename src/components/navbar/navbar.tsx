@@ -10,7 +10,7 @@ export default function Navbar() {
   const isActive = (href:string) => pathname === href
   return (
     <>
-      <nav className="w-full px-16 py-4 grid-cols-10 justify-between shadow items-center hidden md:grid">
+      <nav className="w-full px-16 py-2 grid-cols-10 justify-between shadow-md items-center hidden md:grid">
         <div className="col-span-2">
           <div>
             <Link href={"/"}>

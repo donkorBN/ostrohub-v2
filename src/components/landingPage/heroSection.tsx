@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export default function HeroSection() {
   return (
-    <div className="pt-4 flex gap-12 justify-center items-center lg:h-[90vh]  md:gap-0 relative">
+    <div className="pt-4 flex gap-12 justify-center items-center min-h-[70vh] lg:h-[90vh]  md:gap-0 relative">
       <div className="w-full md:self-center lg:w-6/12">
         <div className="mr-12 md:mr-0 relative z-10 md:z-0">
           <Typography.h1 className="leading-8 text-4xl">
@@ -17,10 +17,10 @@ export default function HeroSection() {
             strategies and goal-setting techniques...
           </Typography.p>
         </div>
-        <div className=" pt-4 md:pt-8 flex justify-center md:justify-start ">
+        <div className="pt-4 md:pt-8 flex justify-center md:justify-start ">
           <Link
             href="/"
-            className="bg-[#019444] text-xl py-3 px-14 text-white md:px-14 md:py-3 md:text-2xl  font-medium rounded-lg "
+            className="bg-[#019444] text-xl py-2 px-12 text-white md:px-14 md:py-3 md:text-2xl  font-medium rounded-lg "
           >
             Join
           </Link>

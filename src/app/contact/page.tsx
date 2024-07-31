@@ -3,6 +3,7 @@ import ContactForm from "@/components/contact/contactForm";
 import ContactInput from "@/components/contact/contactInput";
 import Footer from "@/components/footer/footer";
 import Navbar from "@/components/navbar/navbar";
+import NavbarMobile from "@/components/navbar/navbarMobile";
 import Suscribe from "@/components/subscribe/suscribe";
 import Typography from "@/components/typography";
 import { useState } from "react";
@@ -12,7 +13,8 @@ export default function Contact() {
   return (
     <>
     <Navbar />
-    <main className="px-4 md:px-10 lg:px-24 pb-10">
+    <NavbarMobile />
+    <main className="px-4 md:px-10 lg:px-24 pb-10 mt-8 md:mt-0">
       <div className="w-full min-h-[80vh] flex flex-col gap-4 justify-center items-start md:items-center py-16">
         <Typography.h2 className="hidden md:block">
           Let’s get in touch
