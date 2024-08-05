@@ -130,7 +130,7 @@ const FooterLinks: FooterLinkGroup[] = [
   {
     name: "Links",
     links: [
-      { name: "Home", path: "/home" },
+      { name: "Home", path: "/" },
       { name: "About", path: "/about" },
       { name: "Contact", path: "/contact" },
     ],

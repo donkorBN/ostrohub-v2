@@ -2,10 +2,12 @@
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from 'next/navigation'
+import { useState } from "react";
  
 
 export default function Navbar() {
   const pathname = usePathname()
+  const [isdark, setIsDark] = useState(false)
 
   const isActive = (href:string) => pathname === href
   return (
@@ -35,8 +37,8 @@ export default function Navbar() {
             <li>
               <Link href={"/contact"} className={isActive('/contact') ? "text-[#01AD4F]": ""}>Contact</Link>
             </li>
-            <li className="w-14 h-7 bg-[#14141411] rounded-2xl text-right grid justify-end">
-              <span className="w-7 h-7 rounded-full bg-black-900 block text-right"></span>
+            <li className={`${isdark? 'justify-end': 'justify-start'} w-14 h-7 bg-[#14141411] rounded-2xl text-right grid transition-all ease-in-out duration-500 delay-200`} onClick={()=>setIsDark(!isdark)}>
+              <span className={`${isdark? 'bg-black-900': 'bg-[#eaa53ec6]'} w-7 h-7 rounded-full block text-right`}></span>
             </li>
           </ul>
         </div>

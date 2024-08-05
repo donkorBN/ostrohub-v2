@@ -4,7 +4,7 @@ import Image from "next/image";
 import Typography from "../typography";
 import { FooterLinks } from "@/constant";
 import Link from "next/link";
-import { Icon } from "@iconify/react";
+import { Icon } from "@iconify/react/dist/iconify.js";
 
 interface DropDownStates {
 	[key: string]: boolean;
@@ -18,7 +18,6 @@ export default function Footer() {
 	});
 
 	const handleDropDown = (index: number) => {
-		console.log(index);
 		setDropDownStates({
 			...dropDownStates,
 			[FooterLinks[index].name]: !dropDownStates[FooterLinks[index].name],
