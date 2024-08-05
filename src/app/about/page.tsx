@@ -46,7 +46,7 @@ const Page: React.FC<PageProps> = ({ H1, boda, content, img }) => {
 
 const Impact: React.FC<ImpactProps> = ({ H1, testimony, name, job, dp }) => {
     return (
-        <div className="w-[90%] flex flex-col gap-[1.5rem] border">
+        <div className="w-[90%] md:w-[30%] flex-shrink-0 flex flex-col gap-[1rem] justify-between md:gap-[1.5rem] md:border-0 border-1 border-[#D1D1D1]">
             <h1 className="text-[#141414] font-semibold text-[1.1rem] md:text-[2.3rem] leading-[1.5rem] md:leading-[3rem] font-[Clash Grotesk]">{H1}</h1>
             <p className="font-[Clash Grotesk] font-light text-[0.9rem] md:text-[1rem] md:text-[1.3rem] leading-[1.2rem] md:leading-[1.5rem] text-[#000000]">{testimony}</p>
             <div>
@@ -157,8 +157,7 @@ export default function About() {
                         <h1 className="font-[inika] font-bold text-[2rem] md:text-[4rem] leading-[2.6rem] md:leading-[5rem] absolute left-4 top-7 md:left-7 md:top-10">Our impact to the <br />
                             African Society</h1>
                     </div>
-                    <div className="w-[100%] md:w-[90%] flex md:justify-between mx-auto overflow-auto">
-                    {/* <div className="w-full flex overflow-auto gap-[4rem]"> */}
+                    <div className="w-[100%] md:w-[90%] flex gap-[2rem] md:gap-[0rem] md:justify-between mx-auto overflow-x-auto">
                         <Impact
                             H1={"An amazing way to find resources"}
                             testimony={"A dedicated team poised to bringing the best resources they can find, and adding them to the clutter"}
