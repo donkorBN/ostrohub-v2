@@ -25,6 +25,7 @@ export default function GoalSection() {
       </div>
       <div className="hidden lg:block w-3/5 relative overflow-hidden rounded-br-3xl bg-cover bg-center bg-[url('/assets/vr.png')]">
         <span className="absolute w-80 h-80 rounded-full -bottom-4 right-20 bg-[#019444] -z-10"></span>
+        
       </div>
     </div>
   );
