@@ -49,7 +49,7 @@ const Impact: React.FC<ImpactProps> = ({ H1, testimony, name, job, dp }) => {
     return (
         <div className="w-[90%] md:w-[30%] flex-shrink-0 flex flex-col gap-[1rem] justify-between md:gap-[1.5rem] md:border-0 border-1 border-[#D1D1D1]">
             <h1 className="text-[#141414] font-semibold text-[1.1rem] md:text-[2.3rem] leading-[1.5rem] md:leading-[3rem] font-[Clash Grotesk]">{H1}</h1>
-            <p className="font-[Clash Grotesk] font-light text-[0.9rem] md:text-[1rem] md:text-[1.3rem] leading-[1.2rem] md:leading-[1.5rem] text-[#000000]">{testimony}</p>
+            <p className="font-[Clash Grotesk] font-light text-[0.9rem] md:text-[1rem]  leading-[1.2rem] md:leading-[1.5rem] text-[#000000]">{testimony}</p>
             <div>
                 <div className="w-[3rem] h-[3rem] bg-[#C4C4C432] rounded-full flex items-center justify-center float-left">
                     <img src={dp} alt="" className="w-90 h-90" />
