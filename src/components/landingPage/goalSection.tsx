@@ -1,6 +1,6 @@
 import { Goals } from "@/constant";
 import Typography from "../typography";
-import Image from "next/image";
+
 
 export default function GoalSection() {
   return (

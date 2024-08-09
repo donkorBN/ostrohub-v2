@@ -20,7 +20,9 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <Layout>
+          <div className="max-w-[1600px] mx-auto">
           {children}
+          </div>
         </Layout>
       </body>
     </html>

@@ -99,7 +99,7 @@ export default function About() {
                         </div>
                     </div>
                     <div className="block md:hidden bg-[url(/assets/about1.png)] bg-cover bg-center w-screen  relative">
-                        <div className="absolute inset-0 bg-green-grad opacity-[70%]"></div>
+                        <div className="absolute inset-0 bg-green-900-900-900-grad opacity-[70%]"></div>
                         <div className="relative w-[90%] h-full pl-[1rem] flex flex-col justify-center gap-[2rem]">
                             <h1 className="text-[#222222] text-[2rem] leading-[41.66px] font-bold font-[inika] mt-[1.5rem]">
                                 About us

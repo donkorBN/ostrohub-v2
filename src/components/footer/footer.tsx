@@ -26,14 +26,15 @@ export default function Footer() {
 
 	return (
 		<>
-			<div className="flex flex-col gap-10 min-h-[70vh] w-full  justify-center bg-[#EAA53E75] px-4 md:px-7 lg:px-12">
+			<div className="flex flex-col gap-10 min-h-[70vh] max-h-[600px] w-full  justify-center bg-[#EAA53E75] py-20 px-4 md:px-7 lg:px-12">
 				<div className="flex flex-col md:flex-row justify-between gap-7 ">
 					<div className=" md:w-2/6 self-center ">
 						<div className="text-2xl md:text-4xl w-36 md:w-48 h-12 md:h-16 font-semibold relative">
 							<Image
 								src="/assets/OstroHublogo.png"
 								alt="logo"
-								layout="fill"
+								fill
+								sizes="(min-width: 60em) 9em, (min-width: 37em) 8em"
 								className="absolute top-0"
 							/>
 						</div>
