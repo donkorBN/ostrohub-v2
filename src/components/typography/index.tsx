@@ -2,8 +2,8 @@ import { HTMLAttributes, ReactNode } from "react";
 import { ParagraphProps, TypographyProps } from "@/types";
 
 const headingStyles = {
-  h1: "text-[2.5em] md:text-[4rem] font-extrabold leading-[1em] md:leading-[4.67rem]",
-  h2: "text-[2em] md:text-[3.5rem] font-semibold leading-[1em] md:leading-[2.5rem]",
+  h1: "text-[2rem] md:text-[3.3rem] lg:text-[3.6rem] font-extrabold leading-[2.563rem] md:leading-[4.5rem]",
+  h2: "text-[2rem] md:text-[3.5rem] font-semibold leading-[1em] md:leading-[2.5rem]",
   h3: "text-[1.5em] md:text-[3rem] font-semibold md:leading-[2rem]",
   h4: "text-lg font-semibold leading-[1.5rem]",
 }

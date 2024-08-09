@@ -12,7 +12,7 @@ export default function Navbar() {
   const isActive = (href:string) => pathname === href
   return (
     <>
-      <nav className="w-full px-16 py-2 grid-cols-10 justify-between shadow-md items-center hidden md:grid">
+      <nav className="w-full max-w-[1600px] px-16 py-2 grid-cols-10 fixed top-0 z-40 bg-[#edededf8] justify-between shadow-md items-center hidden md:grid">
         <div className="col-span-2">
           <div>
             <Link href={"/"}>
@@ -36,9 +36,6 @@ export default function Navbar() {
             </li>
             <li>
               <Link href={"/contact"} className={isActive('/contact') ? "text-[#01AD4F]": ""}>Contact</Link>
-            </li>
-            <li className={`${isdark? 'justify-end': 'justify-start'} w-14 h-7 bg-[#14141411] rounded-2xl text-right grid transition-all ease-in-out duration-500 delay-200`} onClick={()=>setIsDark(!isdark)}>
-              <span className={`${isdark? 'bg-black-900': 'bg-[#eaa53ec6]'} w-7 h-7 rounded-full block text-right`}></span>
             </li>
           </ul>
         </div>

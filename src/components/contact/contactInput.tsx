@@ -3,11 +3,11 @@ import React from 'react';
 
 interface InputProps {
   label: string;
-  type?: 'text' | 'email' | 'password' | string; // Flexible type for other input types
+  type?: 'text' | 'email' | 'password' | string; 
   placeholder?: string;
   value: string;
   onChange: (event: React.ChangeEvent<HTMLInputElement>) => void;
-  className?: string; // Optional custom CSS class for styling
+  className?: string; 
 }
 
 export default function ContactInput ({ label, type = 'text', placeholder, value, onChange, className } : InputProps){
@@ -17,10 +17,10 @@ export default function ContactInput ({ label, type = 'text', placeholder, value
         {label}
       </label>
       <input
-        id={label} // Link label and input for accessibility
+        id={label} 
         type={type}
         placeholder={placeholder}
-        className={`w-full px-4 py-[10px] md:px-8 md:py-4  text-sm lg:text-lg rounded-lg md:rounded-2xl bg-[#90909021] text-[#22222259] border-none outline-none ${className || ''}`} // Apply custom class if provided
+        className={`w-full px-4 py-[10px] md:px-8 md:py-4  text-base lg:text-xl rounded-lg md:rounded-2xl bg-[#90909021] text-black border-none outline-none ${className || ''}`} 
         value={value}
         onChange={onChange}
       />

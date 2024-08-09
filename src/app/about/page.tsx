@@ -1,5 +1,6 @@
 import Footer from "@/components/footer/footer";
 import Navbar from "@/components/navbar/navbar";
+import NavbarMobile from "@/components/navbar/navbarMobile";
 import Suscribe from "@/components/subscribe/suscribe";
 import { Inika } from "next/font/google";
 
@@ -48,7 +49,7 @@ const Impact: React.FC<ImpactProps> = ({ H1, testimony, name, job, dp }) => {
     return (
         <div className="w-[90%] md:w-[30%] flex-shrink-0 flex flex-col gap-[1rem] justify-between md:gap-[1.5rem] md:border-0 border-1 border-[#D1D1D1]">
             <h1 className="text-[#141414] font-semibold text-[1.1rem] md:text-[2.3rem] leading-[1.5rem] md:leading-[3rem] font-[Clash Grotesk]">{H1}</h1>
-            <p className="font-[Clash Grotesk] font-light text-[0.9rem] md:text-[1rem] md:text-[1.3rem] leading-[1.2rem] md:leading-[1.5rem] text-[#000000]">{testimony}</p>
+            <p className="font-[Clash Grotesk] font-light text-[0.9rem] md:text-[1rem]  leading-[1.2rem] md:leading-[1.5rem] text-[#000000]">{testimony}</p>
             <div>
                 <div className="w-[3rem] h-[3rem] bg-[#C4C4C432] rounded-full flex items-center justify-center float-left">
                     <img src={dp} alt="" className="w-90 h-90" />
@@ -85,6 +86,7 @@ export default function About() {
     return (
         <>
             <Navbar />
+            <NavbarMobile />
             <div className="w-full flex flex-col items-center bg-[#FDFDFD]">
                 <div className="w-[90%] mt-[10vh] flex flex-col items-center gap-[10vh]">
                     <div className="hidden md:flex w-full  ">
@@ -97,7 +99,7 @@ export default function About() {
                         </div>
                     </div>
                     <div className="block md:hidden bg-[url(/assets/about1.png)] bg-cover bg-center w-screen  relative">
-                        <div className="absolute inset-0 bg-green-grad opacity-[70%]"></div>
+                        <div className="absolute inset-0 bg-green-900-900-900-grad opacity-[70%]"></div>
                         <div className="relative w-[90%] h-full pl-[1rem] flex flex-col justify-center gap-[2rem]">
                             <h1 className="text-[#222222] text-[2rem] leading-[41.66px] font-bold font-[inika] mt-[1.5rem]">
                                 About us
