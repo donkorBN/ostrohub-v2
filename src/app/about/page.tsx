@@ -1,5 +1,6 @@
 import Footer from "@/components/footer/footer";
 import Navbar from "@/components/navbar/navbar";
+import NavbarMobile from "@/components/navbar/navbarMobile";
 import Suscribe from "@/components/subscribe/suscribe";
 import { Inika } from "next/font/google";
 
@@ -85,6 +86,7 @@ export default function About() {
     return (
         <>
             <Navbar />
+            <NavbarMobile />
             <div className="w-full flex flex-col items-center bg-[#FDFDFD]">
                 <div className="w-[90%] mt-[10vh] flex flex-col items-center gap-[10vh]">
                     <div className="hidden md:flex w-full  ">
