@@ -5,6 +5,7 @@ import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
 import { Icon } from "@iconify/react";
+import favicon from "@/app/favicon.ico"
 
 interface NavItemProps {
 	href: string;
@@ -93,10 +94,10 @@ export default function NavbarMobile() {
 							: "-right-96 opacity-0 top-[71px]"
 					} w-[100vw] h-[100vh] fixed z-20 ease-in-out transition-all duration-500 delay-200  bg-[#f7e1c028] bg-bl `}
 				>
-					<div className="w-[80vw] h-[100vh]  bg-[#f7e1c0e3] absolute top-0 right-0 pl-8 z-50">
-						{/* <Image src={"/assets/split_logo.png"} alt="split logo" width={200} height={200} /> */}
-						<div className=" mt-24">
-							<ul className="flex flex-col gap-7 text-xl font-semibold">
+					<div className="w-[80vw] h-[100vh]  bg-[#f7e1c0e3] absolute top-0 right-0 pl-8 z-50 ">
+						<Image src={favicon} alt="split logo" width={43} height={48} className="mt-4" />
+						<div className="mt-12 ">
+							<ul className="flex flex-col gap-10 text-xl font-semibold">
 								<NavItem href="/">Home</NavItem>
 								<NavItem href="/about">About</NavItem>
 								<NavItem href="/contact">Contact</NavItem>
