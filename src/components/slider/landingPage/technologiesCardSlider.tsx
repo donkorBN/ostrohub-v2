@@ -5,11 +5,11 @@ import Image from "next/image";
 import "swiper/css";
 import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
-import "../../styles/index.scss";
+import "@/styles/index.scss";
 
 import { Pagination } from "swiper/modules";
 
-export default function CardSlider() {
+export default function TechnogiesCardSlider() {
   return (
     <>
       <Swiper
@@ -19,7 +19,7 @@ export default function CardSlider() {
           clickable: true,
         }}
         modules={[Pagination]}
-        className="mySwiper "
+        className="mySwiper"
       >
         {Technologies.map((technology, index) => (
           <SwiperSlide key={index}>

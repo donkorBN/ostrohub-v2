@@ -9,12 +9,27 @@
  font-family: "Inika", serif;
  box-sizing: border-box;
 }
-.swiper{
+.skill .swiper{
     width: 100%;
-    height: 80px;
-    
-     padding-top: 20px;
-     padding-bottom: 20px;
-   }
+    height: fit-content;
+    padding-bottom:40px;
+}
    
-     
+.qualities .swiper{
+    width: 100%;
+    height: fit-content;
+    align-items: center;
+    padding-left: 40px;
+    padding-bottom:40px;
+}
+.team .swiper {
+  width: 100%;
+  height: fit-content;
+  padding-bottom: 2.5rem;
+}
+$breakpoint-tablet: 640px;
+@media (max-width: $breakpoint-tablet) {
+  .qualities .swiper{
+    padding-left: 10px;
+  }
+}
