@@ -35,8 +35,8 @@ export default function QualitiesCardSlider() {
 						spaceBetween: 10,
 					  },
 					  1024: {
-						slidesPerView: 3.8,
-						spaceBetween: 10,
+						slidesPerView: 3.9,
+						spaceBetween: 0,
 					  },
 				}}
 				pagination={{
@@ -54,7 +54,7 @@ export default function QualitiesCardSlider() {
 							style={{ borderColor: quality.boda }}
 						>
 							<Typography.p
-								className="text-[26px] leading-[27px]  md:text-[30px] md:leading-[30.36px] font-medium"
+								className="text-[26px] leading-[27px]  md:text-[32px] md:leading-[30.36px] font-medium"
 								style={{ color: quality.boda }}
 							>
 								{quality.H1}

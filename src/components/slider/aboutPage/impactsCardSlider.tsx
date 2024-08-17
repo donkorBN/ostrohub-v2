@@ -47,7 +47,7 @@ export default function ImpactsCardSlider() {
 								{impact.content}
 							</Typography.p>
 							<div className="flex gap-3 mt-4">
-								<div className="relative w-12 h-12 rounded-full">
+								<div className="relative w-12 h-12 rounded-full cursor-pointer">
 									<Image
 										src={impact.img}
 										alt="logo"
@@ -57,7 +57,7 @@ export default function ImpactsCardSlider() {
 											height: "100%",
 											objectFit: "cover",
 										}}
-										className="absolute top-0  rounded-full border border-solid border-orange-900"
+										className="absolute top-0  rounded-full border transition-all ease-out duration-500 delay-200 hover:border-2 hover:border-green-900 border-solid border-orange-900"
 									/>
 								</div>
 								<div>
