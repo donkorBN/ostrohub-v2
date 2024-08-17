@@ -18,6 +18,14 @@ export default function QualitiesCardSlider() {
 				slidesPerView={1.2}
 				spaceBetween={5}
 				breakpoints={{
+					200: {
+						slidesPerView: 1.1,
+						spaceBetween: 1,
+					},
+					345: {
+						slidesPerView: 1.2,
+						spaceBetween: 8,
+					},
 					640: {
 						slidesPerView: 1.6,
 						spaceBetween: 10,

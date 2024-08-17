@@ -5,7 +5,7 @@ import QualitiesCardSlider from "../slider/aboutPage/qualitiesCardSlider";
 export default function GoalSection() {
 	return (
 		<>
-			<div className="/ px-4 md:px-7 lg:px-12 ">
+			<div className="px-4 md:px-7 lg:px-12 ">
 				{Mission.map((item, index) => (
 					<div
 						key={index}

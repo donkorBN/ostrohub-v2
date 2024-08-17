@@ -32,10 +32,10 @@ interface qualities {
 
 interface impacts {
 	H1: string;
-	testimony: string;
+	content: string;
 	name: string;
-	job: string;
-	dp: string;
+	role: string;
+	img: string;
 }
 
 interface teamMembers {
@@ -199,7 +199,7 @@ const Qualities: qualities[] = [
 
 const TeamMembers: teamMembers[] = [
 	{
-		img:"/assets/team1.svg",
+		img: "/assets/team1.svg",
 		role: "CTO",
 	},
 	{
@@ -217,6 +217,32 @@ const TeamMembers: teamMembers[] = [
 	{
 		img: "/assets/team1.svg",
 		role: "Backend Dev",
+	},
+];
+const Impacts: impacts[] = [
+	{
+		H1: "An amazing way to find resources",
+		content:
+			"A dedicated team poised to bringing the best resources they can find, and adding them to the clutter",
+		name: "Jonah Doe",
+		role: "Graphics designer",
+		img: "/assets/aboutImpactlogo.svg",
+	},
+	{
+		H1: "I am so grateful to Ostrohub...",
+		content:
+			"A dedicated team poised to bringing the best resources they can find, and adding them to the clutter",
+		name: "Jonah Doe",
+		role: "Graphics designer",
+		img: "/assets/aboutImpactlogo.svg",
+	},
+	{
+		H1: "An amazing way to find resources",
+		content:
+			"A dedicated team poised to bringing the best resources they can find, and adding them to the clutter",
+		name: "Jonah Doe",
+		role: "Graphics designer",
+		img: "/assets/aboutImpactlogo.svg",
 	},
 ];
 
@@ -257,5 +283,6 @@ export {
 	FooterLinks,
 	Mission,
 	Qualities,
-	TeamMembers
+	TeamMembers,
+	Impacts
 };

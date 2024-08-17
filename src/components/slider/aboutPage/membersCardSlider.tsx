@@ -13,6 +13,7 @@ import "@/styles/about/index.scss"
 
 
 export default function MembersCardSlider (){
+ 
     return (
         <>
         <Swiper
@@ -20,7 +21,7 @@ export default function MembersCardSlider (){
 				spaceBetween={15}
 				breakpoints={{
 					640: {
-						slidesPerView: 1.3,
+						slidesPerView: 3,
 						spaceBetween: 0,
 					  },
 					  768: {
