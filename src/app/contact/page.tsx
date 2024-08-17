@@ -1,12 +1,21 @@
-"use client";
 import ContactForm from "@/components/contactPage/contactForm";
-import ContactInput from "@/components/contactPage/contactInput";
 import Footer from "@/components/footer/footer";
 import Navbar from "@/components/navbar/navbar";
 import NavbarMobile from "@/components/navbar/navbarMobile";
 import Suscribe from "@/components/subscribe/suscribe";
 import Typography from "@/components/typography";
+import { Metadata } from "next";
 
+export const metadata: Metadata = {
+	title: "Contact Us - OstroHub",
+	description: "Contact OstroHub",
+	openGraph: {
+		title: "OstroHub",
+		description: "Fostering tech brilliance! Your community for growth. Whether seasoned or new, find support navigating the tech landscape with us. 🚀",
+		images: "https://pbs.twimg.com/profile_images/1813255327351009281/DeSZiT8U_400x400.jpg"
+	},
+	keywords: ["Tech community", "Fostering growth"]
+}
 
 export default function Contact() {
 
@@ -17,7 +26,7 @@ export default function Contact() {
     <main className="px-4 md:px-10 lg:px-24 pb-10 mt-8 md:mt-8">
       <div className="w-full min-h-[80vh] flex flex-col gap-4 justify-center items-start md:items-center py-16">
         <Typography.h1 className="hidden md:block">
-          Let’s get in touch
+          Let&apos;s get in touch
         </Typography.h1>
         <Typography.h2 className="block md:hidden">Get in touch</Typography.h2>
         <div className="w-full grid  grid-cols-1 gap-4 md:grid-cols-2 lg:gap-x-14 lg:gap-y-10">
