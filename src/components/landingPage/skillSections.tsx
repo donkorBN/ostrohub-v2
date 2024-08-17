@@ -2,12 +2,12 @@
 import { Features, Highlights } from "@/constant";
 import Typography from "../typography";
 import Image from "next/image";
-import TechnologySlider from "../slider/technologySlider";
-import CardSlider from "../slider/cardSlider";
+import TechnologySlider from "../slider/landingPage/technologySlider";
+import CardSlider from "../slider/landingPage/technologiesCardSlider";
 
 export default function SkillSection() {
 	return (
-		<div className="my-12 text-center ">
+		<div className="skill my-12 text-center">
 			<Typography.p className="text-base md:text-2xl lg:text-3xl font-bold">
 				Skill up learn and access resources easily.
 			</Typography.p>
@@ -53,20 +53,3 @@ export default function SkillSection() {
 	);
 }
 
-// import { useRef } from 'react';
-
-// const MyComponent = ({ highlight }) => {
-//   const imageRef = useRef();
-
-//   return (
-//     <Image
-//       src={highlight.img}
-//       alt="high"
-//       layout="fill"
-//       objectFit="cover"
-//       className="absolute top-0 -z-0 transition-opacity opacity-0 duration-[2s]"
-//       ref={imageRef}
-//       onLoad={() => imageRef.current.classList.remove("opacity-0")}
-//     />
-//   );
-// };

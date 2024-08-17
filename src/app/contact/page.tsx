@@ -1,6 +1,6 @@
 "use client";
-import ContactForm from "@/components/contact/contactForm";
-import ContactInput from "@/components/contact/contactInput";
+import ContactForm from "@/components/contactPage/contactForm";
+import ContactInput from "@/components/contactPage/contactInput";
 import Footer from "@/components/footer/footer";
 import Navbar from "@/components/navbar/navbar";
 import NavbarMobile from "@/components/navbar/navbarMobile";
